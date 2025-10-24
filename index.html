@@ -10,37 +10,166 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-content">
-            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-                <span class="theme-text">Dark Mode</span>
-                <i class="fas fa-sun"></i>
-                <i class="fas fa-moon"></i>
-            </button>
-            <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
-            <h1>Arkwings Cyprian Abala</h1>
-            <p class="role">Software Engineer | Backend Developer</p>
-            <p class="tagline">Building robust backend solutions with passion and precision</p>
+    <!-- Premium Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-circle">
+                    <span class="logo-text">AC</span>
+                </div>
+            </div>
+            <div class="loading-text">
+                <span class="loading-title">Arkwings Cyprian Abala</span>
+                <span class="loading-subtitle">Software Engineer</span>
+            </div>
+            <div class="loading-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <span class="progress-text">Loading...</span>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"><i
-                            class="fas fa-home"></i> Home</a></li>
-                <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
-                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
-                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        <div class="loading-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+
+    <!-- Modern Floating Navigation -->
+    <nav class="floating-nav" id="floating-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">AC</span>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link active"><i class="fas fa-home"></i> <span>Home</span></a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> <span>About</span></a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> <span>Skills</span></a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i>
+                        <span>Projects</span></a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
             </ul>
-        </nav>
-    </header>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="greeting">Hello, I'm</div>
+                <h1 class="hero-name">
+                    <span class="name-line">Arkwings Cyprian</span>
+                    <span class="name-line">Abala</span>
+                </h1>
+                <div class="hero-role">
+                    <span class="role-text">Full-Stack Developer</span>
+                    <span class="role-separator">•</span>
+                    <span class="role-text">Software Engineer</span>
+                </div>
+                <p class="hero-description">
+                    Crafting beautiful, responsive frontends and robust backend solutions with cutting-edge
+                    technologies.
+                    Passionate about creating seamless user experiences and scalable systems that power the future.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="images/profile.jpg" alt="Arkwings Cyprian Abala" class="profile-image">
+                    <div class="image-glow"></div>
+                    <div class="floating-elements">
+                        <div class="floating-icon icon-1"><i class="fab fa-python"></i></div>
+                        <div class="floating-icon icon-2"><i class="fab fa-node-js"></i></div>
+                        <div class="floating-icon icon-3"><i class="fab fa-docker"></i></div>
+                        <div class="floating-icon icon-4"><i class="fas fa-database"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll to explore</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
 
     <section id="about">
         <h2><i class="fas fa-user"></i> About Me</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>Hello! I'm Arkwings Cyprian Abala, a Software Engineer specializing in backend development. With
-                    expertise in Python, JavaScript, and various frameworks like Django, Flask, and Node.js, I focus on
-                    creating scalable and efficient server-side applications that drive business success.</p>
+                <div class="about-intro">
+                    <p>Hello! I'm <strong>Arkwings Cyprian Abala</strong>, a passionate Full-Stack Developer and
+                        Software Engineer with a love for creating beautiful, functional applications.</p>
+                </div>
+
+                <div class="about-details">
+                    <div class="about-section">
+                        <h4><i class="fas fa-paint-brush"></i> Frontend Expertise</h4>
+                        <p>I craft stunning, responsive user interfaces using modern technologies like React, Vue.js,
+                            and TypeScript. I'm passionate about creating seamless user experiences with smooth
+                            animations and intuitive designs.</p>
+                    </div>
+
+                    <div class="about-section">
+                        <h4><i class="fas fa-server"></i> Backend Mastery</h4>
+                        <p>I build robust, scalable backend systems using Python (Django, Flask, FastAPI) and Node.js.
+                            My focus is on creating efficient APIs, database optimization, and cloud deployment
+                            strategies.</p>
+                    </div>
+
+                    <div class="about-section">
+                        <h4><i class="fas fa-cloud"></i> Cloud & DevOps</h4>
+                        <p>I deploy and manage applications on AWS, using Docker and Kubernetes for containerization. I
+                            ensure high availability, security, and performance in production environments.</p>
+                    </div>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                </div>
                 <div class="social-links">
                     <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
@@ -56,85 +185,159 @@
     </section>
 
     <section id="skills">
-        <h2><i class="fas fa-code"></i> Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-                <span>Python</span>
+        <h2><i class="fas fa-code"></i> Skills & Technologies</h2>
+        <div class="skills-intro">
+            <p>I specialize in full-stack development with expertise in modern frontend frameworks, robust backend
+                systems, and cloud technologies.</p>
+        </div>
+
+        <div class="skills-categories">
+            <div class="skill-category">
+                <h3><i class="fas fa-paint-brush"></i> Frontend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                            alt="React">
+                        <span>React</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                            alt="TypeScript">
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="HTML5">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass">
+                        <span>Sass</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                            alt="Tailwind">
+                        <span>Tailwind CSS</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+                            alt="Vue.js">
+                        <span>Vue.js</span>
+                    </div>
+                </div>
             </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
-                <span>Django</span>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Backend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                            alt="Python">
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                            alt="Django">
+                        <span>Django</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                            alt="Flask">
+                        <span>Flask</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                            alt="Node.js">
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                            alt="Express">
+                        <span>Express</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+                            alt="FastAPI">
+                        <span>FastAPI</span>
+                    </div>
+                </div>
             </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask">
-                <span>Flask</span>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-database"></i> Databases & Cloud</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+                            alt="AWS">
+                        <span>AWS</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                            alt="Docker">
+                        <span>Docker</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+                            alt="Kubernetes">
+                        <span>Kubernetes</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                            alt="PostgreSQL">
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
+                            alt="MongoDB">
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+                            alt="Redis">
+                        <span>Redis</span>
+                    </div>
+                </div>
             </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                    alt="JavaScript">
-                <span>JavaScript</span>
-            </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-                <span>React</span>
-            </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
-                <span>Node.js</span>
-            </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-                    alt="Express">
-                <span>Express</span>
-            </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
-                    alt="Flutter">
-                <span>Flutter</span>
-            </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
-                <span>Docker</span>
-            </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
-                    alt="Kubernetes">
-                <span>Kubernetes</span>
-            </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
-                    alt="MongoDB">
-                <span>MongoDB</span>
-            </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-                    alt="SQL">
-                <span>SQL</span>
-            </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-                <span>HTML</span>
-            </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-                <span>CSS</span>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-brain"></i>
-                <span>AI & ML</span>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-link"></i>
-                <span>Blockchain</span>
-            </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                <span>Git</span>
-            </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
-                <span>Linux</span>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                            alt="Linux">
+                        <span>Linux</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                            alt="Flutter">
+                        <span>Flutter</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-brain"></i>
+                        <span>AI & ML</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-link"></i>
+                        <span>Blockchain</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Mobile Dev</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -163,7 +366,7 @@
         </div>
     </section>
 
-    <section id="testimonials">
+    <!-- <section id="testimonials">
         <h2><i class="fas fa-quote-right"></i> Testimonials</h2>
         <div class="testimonials-grid">
             <div class="testimonial-card">
@@ -191,7 +394,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="services">
         <h2><i class="fas fa-cogs"></i> Services</h2>
