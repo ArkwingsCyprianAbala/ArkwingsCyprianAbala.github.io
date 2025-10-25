@@ -902,6 +902,7 @@ section h2::after {
     flex-direction: column;
     gap: var(--space-3xl);
     position: relative;
+    margin-top: var(--space-xl);
 }
 
 .about-content::before {
@@ -2356,7 +2357,7 @@ footer:hover::before {
     }
 
     .hero-name {
-        font-size: clamp(2.5rem, 6vw, 4rem);
+        font-size: clamp(2rem, 5vw, 3rem);
     }
 
     .hero-actions {
@@ -2433,7 +2434,7 @@ footer:hover::before {
     }
 
     .hero-content {
-        gap: var(--space-lg);
+        gap: var(--space-sm);
     }
 
     .hero-text {
@@ -2441,19 +2442,25 @@ footer:hover::before {
     }
 
     .hero-description {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         max-width: 100%;
+        line-height: 1.5;
     }
-
+    
     .hero-actions {
         flex-direction: column;
         align-items: center;
+        margin-bottom: var(--space-lg);
+        gap: var(--space-sm);
     }
-
+    
     .btn {
         width: 100%;
         max-width: 300px;
         justify-content: center;
+        padding: var(--space-md) var(--space-lg);
+        font-size: 0.95rem;
+        min-height: 48px;
     }
 
     .image-container {
@@ -2637,7 +2644,7 @@ footer:hover::before {
 
     /* Hero Name Mobile */
     .hero-name {
-        font-size: clamp(1.8rem, 4.5vw, 2.5rem);
+        font-size: clamp(1.5rem, 4vw, 2rem);
     }
 }
 
@@ -4888,24 +4895,26 @@ section:hover::after {
 
 @media (max-width: 768px) {
     .hero-section {
-        padding: calc(var(--space-2xl) + 80px) var(--space-md) var(--space-lg);
-        min-height: 100vh;
+        padding: calc(var(--space-2xl) + 100px) var(--space-md) var(--space-3xl);
+        min-height: calc(100vh - 100px);
+        height: auto;
+        margin-bottom: var(--space-xl);
     }
     
     .hero-content {
         grid-template-columns: 1fr;
-        gap: var(--space-xl);
+        gap: var(--space-md);
         text-align: center;
     }
     
     .hero-text {
         order: 2;
-        padding: var(--space-sm) 0;
+        padding: var(--space-md) 0;
     }
     
     .hero-image {
         order: 1;
-        margin-bottom: var(--space-lg);
+        margin-bottom: var(--space-sm);
     }
     
     .image-container {
@@ -4927,6 +4936,7 @@ section:hover::after {
     .about-intro {
         padding: var(--space-lg);
         gap: var(--space-lg);
+        margin-top: var(--space-xl);
     }
     
     .about-image-container {
@@ -5034,32 +5044,40 @@ section:hover::after {
 
 @media (max-width: 480px) {
     .hero-section {
-        padding: calc(var(--space-xl) + 70px) var(--space-sm) var(--space-md);
-        min-height: 100vh;
+        padding: calc(var(--space-xl) + 80px) var(--space-sm) var(--space-2xl);
+        min-height: calc(100vh - 80px);
+        height: auto;
+        margin-bottom: var(--space-lg);
     }
     
     .hero-content {
-        gap: var(--space-lg);
+        gap: var(--space-sm);
     }
     
     .hero-text {
-        padding: var(--space-xs) 0;
+        padding: var(--space-md) 0;
     }
     
     .hero-description {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         max-width: 100%;
+        line-height: 1.5;
     }
     
     .hero-actions {
         flex-direction: column;
         align-items: center;
+        margin-bottom: var(--space-lg);
+        gap: var(--space-sm);
     }
     
     .btn {
         width: 100%;
         max-width: 280px;
         justify-content: center;
+        padding: var(--space-md) var(--space-lg);
+        font-size: 0.9rem;
+        min-height: 44px;
     }
     
     .image-container {
@@ -5081,6 +5099,7 @@ section:hover::after {
     .about-intro {
         padding: var(--space-md);
         gap: var(--space-md);
+        margin-top: var(--space-lg);
     }
     
     .about-image-container {
