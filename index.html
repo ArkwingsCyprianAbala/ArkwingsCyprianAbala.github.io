@@ -55,9 +55,10 @@
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#hero" class="nav-link active"><i class="fas fa-home"></i> <span>Home</span></a></li>
                 <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> <span>About</span></a></li>
+                <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> <span>Experience</span></a></li>
                 <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> <span>Skills</span></a></li>
-                <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i>
-                        <span>Projects</span></a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> <span>Projects</span></a></li>
+                <li><a href="#testimonials" class="nav-link"><i class="fas fa-quote-right"></i> <span>Testimonials</span></a></li>
                 <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
             </ul>
             <div class="nav-actions">
@@ -143,60 +144,285 @@
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about">
         <h2><i class="fas fa-user"></i> About Me</h2>
         <div class="about-content">
-            <div class="about-text">
-                <div class="about-intro">
-                    <p>Hello! I'm <strong>Arkwings Cyprian Abala</strong>, a passionate Full-Stack Developer and
-                        Software Engineer with a love for creating beautiful, functional applications.</p>
-                </div>
-
-                <div class="about-details">
-                    <div class="about-section">
-                        <h4><i class="fas fa-paint-brush"></i> Frontend Expertise</h4>
-                        <p>I craft stunning, responsive user interfaces using modern technologies like React, Vue.js,
-                            and TypeScript. I'm passionate about creating seamless user experiences with smooth
-                            animations and intuitive designs.</p>
-                    </div>
-
-                    <div class="about-section">
-                        <h4><i class="fas fa-server"></i> Backend Mastery</h4>
-                        <p>I build robust, scalable backend systems using Python (Django, Flask, FastAPI) and Node.js.
-                            My focus is on creating efficient APIs, database optimization, and cloud deployment
-                            strategies.</p>
-                    </div>
-
-                    <div class="about-section">
-                        <h4><i class="fas fa-cloud"></i> Cloud & DevOps</h4>
-                        <p>I deploy and manage applications on AWS, using Docker and Kubernetes for containerization. I
-                            ensure high availability, security, and performance in production environments.</p>
+            <div class="about-intro">
+                <div class="about-image-container">
+                    <div class="about-image">
+                        <img src="images/profile.jpg" alt="Arkwings Cyprian Abala" class="about-profile-img"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="about-profile-fallback" style="display: none;">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="image-glow"></div>
+                        <div class="floating-tech-icons">
+                            <div class="floating-tech-icon icon-1"><i class="fab fa-react"></i></div>
+                            <div class="floating-tech-icon icon-2"><i class="fab fa-python"></i></div>
+                            <div class="floating-tech-icon icon-3"><i class="fab fa-node-js"></i></div>
+                            <div class="floating-tech-icon icon-4"><i class="fab fa-aws"></i></div>
+                            <div class="floating-tech-icon icon-5"><i class="fab fa-docker"></i></div>
+                            <div class="floating-tech-icon icon-6"><i class="fab fa-vue"></i></div>
+                            <div class="floating-tech-icon icon-7"><i class="fab fa-js-square"></i></div>
+                            <div class="floating-tech-icon icon-8"><i class="fas fa-database"></i></div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">3+</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">Projects Completed</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">20+</div>
-                        <div class="stat-label">Technologies</div>
+                <div class="about-text">
+                    <h3>Hello! I'm <span class="highlight">Arkwings Cyprian Abala</span></h3>
+                    <p class="about-description">A passionate Full-Stack Developer and Software Engineer with 3+ years of experience creating beautiful, functional applications. I specialize in building scalable web solutions and have a proven track record of delivering high-quality projects.</p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>Full-Stack Development</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Cloud Architecture</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsive Design</span>
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="about-details">
+                <div class="about-section">
+                    <div class="section-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="section-content">
+                        <h4>Frontend Expertise</h4>
+                        <p>I craft stunning, responsive user interfaces using modern technologies like React, Vue.js, and TypeScript. I'm passionate about creating seamless user experiences with smooth animations and intuitive designs.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <div class="section-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="section-content">
+                        <h4>Backend Mastery</h4>
+                        <p>I build robust, scalable backend systems using Python (Django, Flask, FastAPI) and Node.js. My focus is on creating efficient APIs, database optimization, and cloud deployment strategies.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <div class="section-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="section-content">
+                        <h4>Cloud & DevOps</h4>
+                        <p>I deploy and manage applications on AWS, using Docker and Kubernetes for containerization. I ensure high availability, security, and performance in production environments.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Technologies</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+
+            <div class="about-actions">
                 <div class="social-links">
-                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="social-icon" title="GitHub">
+                        <div class="social-icon-bg">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="#" class="social-icon" title="LinkedIn">
+                        <div class="social-icon-bg">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#" class="social-icon" title="Twitter">
+                        <div class="social-icon-bg">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <span>Twitter</span>
+                    </a>
                 </div>
                 <div class="cv-download">
                     <a href="assets/Arkwings_Cyprian_Abala_CV.pdf" target="_blank" class="cv-btn">
-                        <i class="fas fa-download"></i> Download CV
+                        <div class="cv-btn-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <span>Download CV</span>
+                        <div class="cv-btn-shine"></div>
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+        <div class="experience-timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Full-Stack Developer</h3>
+                        <span class="company">Freelance</span>
+                        <span class="duration">2022 - Present</span>
+                    </div>
+                    <p>Developing full-stack web applications for various clients, focusing on modern technologies and best practices. Specializing in React, Node.js, and cloud deployment.</p>
+                    <div class="achievements">
+                        <div class="achievement">
+                            <i class="fas fa-check"></i>
+                            <span>Delivered 20+ successful projects</span>
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-check"></i>
+                            <span>Improved application performance by 40%</span>
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-check"></i>
+                            <span>Maintained 100% client satisfaction rate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Software Development Intern</h3>
+                        <span class="company">Power Learn Project</span>
+                        <span class="duration">2022 - 2023</span>
+                    </div>
+                    <p>Gained hands-on experience in software development, working on real-world projects and learning industry best practices.</p>
+                    <div class="achievements">
+                        <div class="achievement">
+                            <i class="fas fa-check"></i>
+                            <span>Completed comprehensive software development program</span>
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-check"></i>
+                            <span>Built multiple full-stack applications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2><i class="fas fa-quote-right"></i> Client Testimonials</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"Arkwings is an exceptional developer who consistently delivers high-quality solutions. His problem-solving skills and attention to detail are remarkable. He transformed our web application and significantly improved its performance."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-image">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="John Doe">
+                    </div>
+                    <div class="author-info">
+                        <h4>John Doe</h4>
+                        <p>Tech Lead, Innovation Corp</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"Working with Arkwings was a great experience. His technical expertise and professional approach made our project a success. He's reliable, communicates well, and always delivers on time."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-image">
+                        <img src="https://i.pravatar.cc/150?img=9" alt="Jane Smith">
+                    </div>
+                    <div class="author-info">
+                        <h4>Jane Smith</h4>
+                        <p>Project Manager, Tech Solutions</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"Arkwings brought our vision to life with his exceptional development skills. The final product exceeded our expectations, and his ongoing support has been invaluable."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-image">
+                        <img src="https://i.pravatar.cc/150?img=7" alt="Mike Johnson">
+                    </div>
+                    <div class="author-info">
+                        <h4>Mike Johnson</h4>
+                        <p>CEO, StartupXYZ</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -360,25 +586,210 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
-        <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+        <h2><i class="fas fa-project-diagram"></i> Featured Projects</h2>
+        <div class="projects-intro">
+            <p>Here are some of my most impactful projects that showcase my technical expertise and problem-solving abilities.</p>
+        </div>
+        
         <div class="projects-grid">
-            <div class="project-card">
-                <img src="https://picsum.photos/300/200" alt="Project 1">
-                <h3>Cloud Management System</h3>
-                <p>A robust cloud management system built with Django and AWS.</p>
-                <div class="project-links">
-                    <a href="#" class="project-btn"><i class="fab fa-github"></i> Code</a>
-                    <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Demo</a>
+            <div class="project-card featured">
+                <div class="project-image">
+                    <img src="https://picsum.photos/400/250" alt="E-Commerce Platform">
+                    <div class="project-overlay">
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">AWS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3>E-Commerce Platform</h3>
+                        <span class="project-status">Live</span>
+                    </div>
+                    <p class="project-description">A full-stack e-commerce platform with advanced features including real-time inventory management, payment processing, and admin dashboard. Built with modern technologies and deployed on AWS.</p>
+                    
+                    <div class="project-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Real-time inventory tracking</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Secure payment integration</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Admin dashboard with analytics</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-stats">
+                        <div class="stat">
+                            <span class="stat-value">40%</span>
+                            <span class="stat-label">Performance Improvement</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">99.9%</span>
+                            <span class="stat-label">Uptime</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="#" class="project-btn primary">
+                            <i class="fas fa-external-link-alt"></i> 
+                            <span>Live Demo</span>
+                        </a>
+                        <a href="#" class="project-btn secondary">
+                            <i class="fab fa-github"></i> 
+                            <span>View Code</span>
+                        </a>
+                    </div>
                 </div>
             </div>
+
             <div class="project-card">
-                <img src="https://picsum.photos/300/201" alt="Project 2">
-                <h3>API Gateway Service</h3>
-                <p>Microservices architecture with Docker and Kubernetes.</p>
-                <div class="project-links">
-                    <a href="#" class="project-btn"><i class="fab fa-github"></i> Code</a>
-                    <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Demo</a>
+                <div class="project-image">
+                    <img src="https://picsum.photos/400/251" alt="Cloud Management System">
+                    <div class="project-overlay">
+                        <div class="project-tech">
+                            <span class="tech-badge">Django</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">AWS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3>Cloud Management System</h3>
+                        <span class="project-status">Completed</span>
+                    </div>
+                    <p class="project-description">A comprehensive cloud resource management system that allows users to monitor, manage, and optimize their cloud infrastructure across multiple providers.</p>
+                    
+                    <div class="project-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Multi-cloud support</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Cost optimization</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Real-time monitoring</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="#" class="project-btn primary">
+                            <i class="fas fa-external-link-alt"></i> 
+                            <span>View Demo</span>
+                        </a>
+                        <a href="#" class="project-btn secondary">
+                            <i class="fab fa-github"></i> 
+                            <span>Source Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://picsum.photos/400/252" alt="API Gateway Service">
+                    <div class="project-overlay">
+                        <div class="project-tech">
+                            <span class="tech-badge">FastAPI</span>
+                            <span class="tech-badge">Kubernetes</span>
+                            <span class="tech-badge">Redis</span>
+                            <span class="tech-badge">Docker</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3>Microservices API Gateway</h3>
+                        <span class="project-status">In Production</span>
+                    </div>
+                    <p class="project-description">A high-performance API gateway built with microservices architecture, featuring load balancing, rate limiting, and comprehensive monitoring capabilities.</p>
+                    
+                    <div class="project-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Load balancing</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Rate limiting</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Health monitoring</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="#" class="project-btn primary">
+                            <i class="fas fa-external-link-alt"></i> 
+                            <span>View Demo</span>
+                        </a>
+                        <a href="#" class="project-btn secondary">
+                            <i class="fab fa-github"></i> 
+                            <span>Source Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://picsum.photos/400/253" alt="Task Management App">
+                    <div class="project-overlay">
+                        <div class="project-tech">
+                            <span class="tech-badge">Vue.js</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">Socket.io</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3>Real-time Task Management</h3>
+                        <span class="project-status">Live</span>
+                    </div>
+                    <p class="project-description">A collaborative task management application with real-time updates, team collaboration features, and advanced project tracking capabilities.</p>
+                    
+                    <div class="project-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Real-time collaboration</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Team management</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Progress tracking</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="#" class="project-btn primary">
+                            <i class="fas fa-external-link-alt"></i> 
+                            <span>Try It</span>
+                        </a>
+                        <a href="#" class="project-btn secondary">
+                            <i class="fab fa-github"></i> 
+                            <span>View Code</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -579,38 +990,113 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
-        <h2><i class="fas fa-envelope"></i> Contact</h2>
-
-        <!-- Add contact details section -->
-        <div class="contact-info">
-            <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <p>+254 757 005 412</p>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <p>arkwingscyprianabala@gmail.com</p>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Nairobi, Kenya</p>
-            </div>
+        <h2><i class="fas fa-envelope"></i> Get In Touch</h2>
+        <div class="contact-intro">
+            <p>Ready to start your next project? Let's discuss how I can help bring your ideas to life with cutting-edge technology and professional expertise.</p>
         </div>
 
-        <!-- Existing form -->
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{10,}" title="Please enter a valid phone number"
-                required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
-        </form>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <p>+254 757 005 412</p>
+                        <span>Available 9 AM - 6 PM EAT</span>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>arkwingscyprianabala@gmail.com</p>
+                        <span>I'll respond within 24 hours</span>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Location</h4>
+                        <p>Nairobi, Kenya</p>
+                        <span>Available for remote work</span>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Response Time</h4>
+                        <p>Within 24 hours</p>
+                        <span>Usually much faster!</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <div class="form-header">
+                        <h3>Send me a message</h3>
+                        <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+254 700 000 000">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="mobile-app">Mobile App Development</option>
+                                <option value="consulting">Consulting</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Tell me about your project, timeline, and any specific requirements..."></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to my newsletter for tech insights and updates</label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -619,8 +1105,10 @@
                 <div class="footer-nav">
                     <a href="#top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Home</a>
                     <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
                     <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
+                    <a href="#testimonials">Testimonials</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-social">
