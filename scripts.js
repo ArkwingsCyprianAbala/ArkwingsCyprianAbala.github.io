@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 const offsetTop = targetSection.offsetTop - 100;
                 window.scrollTo({
                     top: offsetTop,
-                    behavior: 'smooth'
-                });
+                behavior: 'smooth'
+            });
 
                 // Close mobile menu
                 navMenu.classList.remove('active');
@@ -111,15 +111,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Theme switching functionality
     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-
+    
     function setTheme(theme) {
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
-
+        
         // Update button icons
         const sunIcon = themeToggle.querySelector('.fa-sun');
         const moonIcon = themeToggle.querySelector('.fa-moon');
-
+        
         if (theme === 'dark') {
             sunIcon.style.opacity = '0';
             sunIcon.style.transform = 'rotate(-180deg)';
@@ -596,4 +596,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     console.log('🚀 Premium Portfolio loaded successfully!');
     console.log('✨ Features: Glassmorphism, Particle Effects, Advanced Animations, Premium Loading Screen');
-});
+}); 

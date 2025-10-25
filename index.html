@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <!-- Interactive Background -->
+    <div class="interactive-bg"></div>
+
     <!-- Premium Loading Screen -->
     <div class="loading-screen" id="loading-screen">
         <div class="loading-content">
@@ -80,8 +83,7 @@
             <div class="hero-text">
                 <div class="greeting">Hello, I'm</div>
                 <h1 class="hero-name">
-                    <span class="name-line">Arkwings Cyprian</span>
-                    <span class="name-line">Abala</span>
+                    <span class="name-line">Arkwings Cyprian Abala</span>
                 </h1>
                 <div class="hero-role">
                     <span class="role-text">Full-Stack Developer</span>
@@ -106,13 +108,29 @@
             </div>
             <div class="hero-image">
                 <div class="image-container">
-                    <img src="images/profile.jpg" alt="Arkwings Cyprian Abala" class="profile-image">
+                    <div class="profile-image-wrapper">
+                        <img src="images/profile.jpg" alt="Arkwings Cyprian Abala" class="profile-image"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="profile-fallback" style="display: none;">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="image-overlay"></div>
+                        <div class="image-border"></div>
+                    </div>
                     <div class="image-glow"></div>
                     <div class="floating-elements">
                         <div class="floating-icon icon-1"><i class="fab fa-python"></i></div>
                         <div class="floating-icon icon-2"><i class="fab fa-node-js"></i></div>
                         <div class="floating-icon icon-3"><i class="fab fa-docker"></i></div>
                         <div class="floating-icon icon-4"><i class="fas fa-database"></i></div>
+                        <div class="floating-icon icon-5"><i class="fab fa-react"></i></div>
+                        <div class="floating-icon icon-6"><i class="fab fa-js-square"></i></div>
+                        <div class="floating-icon icon-7"><i class="fab fa-aws"></i></div>
+                        <div class="floating-icon icon-8"><i class="fab fa-git-alt"></i></div>
+                        <div class="floating-icon icon-9"><i class="fab fa-html5"></i></div>
+                        <div class="floating-icon icon-10"><i class="fab fa-css3-alt"></i></div>
+                        <div class="floating-icon icon-11"><i class="fab fa-vue"></i></div>
+                        <div class="floating-icon icon-12"><i class="fas fa-code"></i></div>
                     </div>
                 </div>
             </div>
@@ -398,44 +416,96 @@
 
     <section id="services">
         <h2><i class="fas fa-cogs"></i> Services</h2>
+        <div class="services-intro">
+            <p>I offer comprehensive full-stack development services, combining cutting-edge frontend technologies with
+                robust backend solutions to deliver exceptional digital experiences.</p>
+        </div>
         <div class="services-grid">
-            <div class="service-card">
-                <i class="fas fa-server"></i>
+            <div class="service-card premium-card">
+                <div class="service-icon">
+                    <i class="fas fa-server"></i>
+                </div>
                 <h3>Backend Development</h3>
-                <p>Custom API development, database design, and server optimization</p>
+                <p>Custom API development, database design, and server optimization using Python, Node.js, and modern
+                    frameworks</p>
+                <div class="service-features">
+                    <span class="feature-tag">APIs</span>
+                    <span class="feature-tag">Databases</span>
+                    <span class="feature-tag">Microservices</span>
+                </div>
             </div>
-            <div class="service-card">
-                <i class="fas fa-puzzle-piece"></i>
-                <h3>Problem Solving</h3>
-                <p>Analyzing complex problems and implementing efficient solutions</p>
+            <div class="service-card premium-card">
+                <div class="service-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>Frontend Development</h3>
+                <p>Creating stunning, responsive user interfaces with React, Vue.js, and modern CSS frameworks</p>
+                <div class="service-features">
+                    <span class="feature-tag">React</span>
+                    <span class="feature-tag">Vue.js</span>
+                    <span class="feature-tag">UI/UX</span>
+                </div>
             </div>
-            <div class="service-card">
-                <i class="fas fa-globe"></i>
-                <h3>Web Development</h3>
-                <p>Building responsive and modern web applications with the latest technologies</p>
+            <div class="service-card premium-card">
+                <div class="service-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Full-Stack Web Development</h3>
+                <p>End-to-end web application development with modern technologies and best practices</p>
+                <div class="service-features">
+                    <span class="feature-tag">MERN Stack</span>
+                    <span class="feature-tag">Django</span>
+                    <span class="feature-tag">Responsive</span>
+                </div>
             </div>
-            <div class="service-card">
-                <i class="fas fa-terminal"></i>
-                <h3>Scripting</h3>
-                <p>Automation scripts and tools development for improved workflow efficiency</p>
+            <div class="service-card premium-card">
+                <div class="service-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h3>Cloud & DevOps</h3>
+                <p>Deploying and managing applications on AWS with Docker, Kubernetes, and CI/CD pipelines</p>
+                <div class="service-features">
+                    <span class="feature-tag">AWS</span>
+                    <span class="feature-tag">Docker</span>
+                    <span class="feature-tag">Kubernetes</span>
+                </div>
             </div>
-            <div class="service-card">
-                <i class="fas fa-database"></i>
+            <div class="service-card premium-card">
+                <div class="service-icon">
+                    <i class="fas fa-database"></i>
+                </div>
                 <h3>Database Management</h3>
-                <p>Database design, optimization, and maintenance for scalable applications</p>
+                <p>Database design, optimization, and maintenance for scalable applications with PostgreSQL and MongoDB
+                </p>
+                <div class="service-features">
+                    <span class="feature-tag">PostgreSQL</span>
+                    <span class="feature-tag">MongoDB</span>
+                    <span class="feature-tag">Redis</span>
+                </div>
             </div>
-            <div class="service-card">
-                <i class="fas fa-code-branch"></i>
+            <div class="service-card premium-card">
+                <div class="service-icon">
+                    <i class="fas fa-code-branch"></i>
+                </div>
                 <h3>API Development</h3>
-                <p>RESTful API design and implementation with proper documentation</p>
+                <p>RESTful and GraphQL API design and implementation with comprehensive documentation</p>
+                <div class="service-features">
+                    <span class="feature-tag">REST APIs</span>
+                    <span class="feature-tag">GraphQL</span>
+                    <span class="feature-tag">Documentation</span>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="certifications">
         <h2><i class="fas fa-certificate"></i> Certifications</h2>
+        <div class="certifications-intro">
+            <p>My educational background and professional certifications that demonstrate my commitment to continuous
+                learning and technical excellence in software development.</p>
+        </div>
         <div class="cert-grid">
-            <div class="cert-card">
+            <div class="cert-card premium-card">
                 <i class="fas fa-laptop-code"></i>
                 <h3>Software Development Certificate</h3>
                 <p class="institution">Power Learn Project (PLP)</p>
@@ -443,7 +513,7 @@
                 <a href="#" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
             </div>
 
-            <div class="cert-card">
+            <div class="cert-card premium-card">
                 <i class="fas fa-graduation-cap"></i>
                 <h3>Bachelor of Science in Computer Science</h3>
                 <p class="institution">Rongo University</p>
@@ -451,7 +521,7 @@
                 <a href="#" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
             </div>
 
-            <div class="cert-card">
+            <div class="cert-card premium-card">
                 <i class="fas fa-code"></i>
                 <h3>Software Engineering Certificate</h3>
                 <p class="institution">ALX Africa</p>
@@ -463,8 +533,12 @@
 
     <section id="articles">
         <h2><i class="fas fa-newspaper"></i> Articles</h2>
+        <div class="articles-intro">
+            <p>Technical insights and best practices I've shared through writing, covering topics from backend
+                development to modern web technologies and software engineering principles.</p>
+        </div>
         <div class="articles-grid">
-            <div class="article-card">
+            <div class="article-card premium-card">
                 <div class="article-image">
                     <img src="https://picsum.photos/400/250" alt="Article 1">
                 </div>
@@ -477,7 +551,7 @@
                 </div>
             </div>
 
-            <div class="article-card">
+            <div class="article-card premium-card">
                 <div class="article-image">
                     <img src="https://picsum.photos/400/251" alt="Article 2">
                 </div>
@@ -490,7 +564,7 @@
                 </div>
             </div>
 
-            <div class="article-card">
+            <div class="article-card premium-card">
                 <div class="article-image">
                     <img src="https://picsum.photos/400/252" alt="Article 3">
                 </div>
